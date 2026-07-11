@@ -1,0 +1,77 @@
+[0m12:05:46.814081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DFFB39400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DFD290E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D8242F890>]}
+
+
+============================== 12:05:46.839739 | b1d5651f-a165-4583-97ea-cad2ae23d256 ==============================
+[0m12:05:46.839739 [info ] [MainThread]: Running with dbt=1.12.0-rc2
+[0m12:05:46.841301 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\karen\\.dbt', 'invocation_command': 'dbt init ibm_hr_dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:05:46.861562 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\karen\.dbt
+[0m12:05:46.863524 [debug] [MainThread]: Starter project path: C:\Users\karen\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dbt\include\starter_project
+[0m12:05:46.882382 [info ] [MainThread]: Setting up your profile.
+[0m12:06:54.887418 [info ] [MainThread]: Profile ibm_hr_dbt written to C:\Users\karen\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m12:06:54.895252 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m12:06:54.896155 [info ] [MainThread]: dbt version: 1.12.0-rc2
+[0m12:06:54.896561 [info ] [MainThread]: python version: 3.14.6
+[0m12:06:54.896917 [info ] [MainThread]: python path: C:\Users\karen\AppData\Local\Python\pythoncore-3.14-64\python.exe
+[0m12:06:54.897304 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:06:54.942773 [info ] [MainThread]: Using profiles dir at C:\Users\karen\.dbt
+[0m12:06:54.943286 [info ] [MainThread]: Using profiles.yml file at C:\Users\karen\.dbt\profiles.yml
+[0m12:06:54.943602 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\karen\OneDrive\Documents\power_bi_projects\power_bi_attrition\ibm_hr_dbt\dbt_project.yml
+[0m12:06:54.944453 [info ] [MainThread]: adapter type: postgres
+[0m12:06:54.944769 [info ] [MainThread]: adapter version: 1.10.2
+[0m12:06:55.035102 [info ] [MainThread]: Configuration:
+[0m12:06:55.035646 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:06:55.035941 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:06:55.036290 [info ] [MainThread]: Required dependencies:
+[0m12:06:55.036923 [debug] [MainThread]: Executing "git --help"
+[0m12:06:55.039859 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m12:06:55.040176 [info ] [MainThread]: Connection:
+[0m12:06:55.040487 [info ] [MainThread]:   host: localhost
+[0m12:06:55.040841 [info ] [MainThread]:   port: 5432
+[0m12:06:55.041191 [info ] [MainThread]:   user: postgres
+[0m12:06:55.041472 [info ] [MainThread]:   database: ibm_hr
+[0m12:06:55.041820 [info ] [MainThread]:   schema: transformed
+[0m12:06:55.042067 [info ] [MainThread]:   connect_timeout: 10
+[0m12:06:55.042302 [info ] [MainThread]:   role: None
+[0m12:06:55.042534 [info ] [MainThread]:   search_path: None
+[0m12:06:55.042824 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:06:55.043100 [info ] [MainThread]:   sslmode: None
+[0m12:06:55.043511 [info ] [MainThread]:   sslcert: None
+[0m12:06:55.043841 [info ] [MainThread]:   sslkey: None
+[0m12:06:55.044097 [info ] [MainThread]:   sslrootcert: None
+[0m12:06:55.044340 [info ] [MainThread]:   application_name: dbt
+[0m12:06:55.044664 [info ] [MainThread]:   retries: 1
+[0m12:06:55.045176 [info ] [MainThread]: Registered adapter: postgres=1.10.2
+[0m12:06:55.206539 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:06:56.803263 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:06:56.803644 [debug] [MainThread]: On debug: select 1 as id
+[0m12:06:56.803902 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:06:56.893069 [debug] [MainThread]: SQL status: SELECT 1 in 0.089 seconds
+[0m12:06:56.894120 [debug] [MainThread]: On debug: Close
+[0m12:06:56.894815 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:06:56.895147 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:06:56.895402 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m12:06:56.895823 [info ] [MainThread]: Your new dbt project "ibm_hr_dbt" was created!
+Initialized new project in C:\Users\karen\OneDrive\Documents\power_bi_projects\power_bi_attrition\ibm_hr_dbt\ibm_hr_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:06:56.896209 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m12:06:56.898411 [debug] [MainThread]: Command `dbt init` succeeded at 12:06:56.898190 after 70.21 seconds
+[0m12:06:56.898809 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:06:56.899225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D82283820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D82C7F410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DFFB978A0>]}
+[0m12:06:56.899596 [debug] [MainThread]: Flushing usage events
+[0m12:06:57.684161 [debug] [MainThread]: An error was encountered while trying to flush usage events

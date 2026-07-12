@@ -26,4 +26,4 @@
 ## Working notes:
 - RLS role configured to restrict data by department: in production deployment, a manager mapping table would link login email to authorized department(s).
 - next step: build report pages
-
+- IBM HR is a snapshot, so leave trend axis off 

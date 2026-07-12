@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: fct_employees
+    description: "One row per employee with cleaned and enriched HR data"
+    columns:
+      - name: employee_id
+        description: "Unique employee identifier"
+        tests:
+          - unique
+          - not_null
+
+      - name: is_attrition
+        description: "Boolean attrition flag"
+        tests:
+          - not_null
+
+      - name: department
+        description: "Employee's department"
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                ['Human Resources', 'Research & Development', 'Sales']
+
+      - name: monthly_income
+        description: "Monthly income in USD"
+        tests:
+          - not_null
+
+  - name: agg_attrition_by_department
+    description: "Department-level attrition summary"
+    columns:
+      - name: department
+        tests:
+          - unique
+          - not_null
+      - name: attrition_rate_pct
+        description: "Attrition rate as a percentage"
+        tests:
+          - not_null

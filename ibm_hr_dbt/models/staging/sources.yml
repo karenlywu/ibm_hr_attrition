@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: ibm_hr
+    database: ibm_hr
+    schema: public
+    tables:
+      - name: raw_ibm_hr
+        description: "Raw IBM HR attrition data loaded from Kaggle CSV"
+        columns:
+          - name: EmployeeNumber
+            quote: true
+            description: "Unique employee identifier"
+            tests:
+              - unique
+              - not_null
+          - name: Attrition
+            quote: true
+            description: "Whether employee left (Yes/No)"
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['Yes', 'No']
+

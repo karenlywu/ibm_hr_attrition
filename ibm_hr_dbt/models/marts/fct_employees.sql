@@ -33,6 +33,11 @@ SELECT
     total_working_years,
     num_companies_worked,
     training_times_last_year,
+    CASE department
+        WHEN 'Human Resources'       THEN 1
+        WHEN 'Research & Development' THEN 2
+        WHEN 'Sales'                 THEN 3
+    END AS department_sort_order,
 
     -- Derived metrics
     CASE

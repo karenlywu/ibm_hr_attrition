@@ -24,6 +24,7 @@
 
 
 ## Worklog:
+- Built page 3 - risk analysis factors: decomp tree, scatterplot and overtime attrition rate by dept with slicers
 - Built page 2 - decided waterfall chart was overkill with such a small dataset, so just going with a couple bar charts to view view attrition rates by role and by dept.
 - Built page 1 - attrition overview
 - RLS role configured to restrict data by department: in production deployment, a manager mapping table would link login email to authorized department(s).

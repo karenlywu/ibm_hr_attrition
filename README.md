@@ -24,6 +24,7 @@
 
 
 ## Worklog:
+- page 4 - satisfaction deep dive: added stacked bar chart to view attrition rate by job satisfaction, heat map matrix to compare attrition rate by work life balance and job satisfaction; interactive q&a slicers for dept and years at company
 - Built page 3 - risk analysis factors: decomp tree, scatterplot and overtime attrition rate by dept with slicers
 - Built page 2 - decided waterfall chart was overkill with such a small dataset, so just going with a couple bar charts to view view attrition rates by role and by dept.
 - Built page 1 - attrition overview
